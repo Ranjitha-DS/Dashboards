@@ -1,2 +1,2 @@
-# Dashboards
+# Streamlit Dashboards
 Dashboard-1
