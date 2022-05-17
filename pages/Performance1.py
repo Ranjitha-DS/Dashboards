@@ -8,7 +8,8 @@ def write():
     st.title("Segment Wise Performance")
     st.markdown("Welcome! Please select from the filters in the sidebar to the left of your screen to narrow down your search within the log analysis tool.")
 
-    df = pd.read_csv(r'C:\Users\ranjitha_scienaptic\Downloads\FCE1.csv',index_col=False)
+    #df = pd.read_csv(r'C:\Users\ranjitha_scienaptic\Downloads\FCE1.csv',index_col=False)
+    df = pd.read_csv(r'FCE1.csv',index_col=False)
     df['FCE%'] = df['FCE%'].str.rstrip("%").astype(float)/100*100
     df['Collection Efficiency'] = df['Collection Efficiency'].str.rstrip("%").astype(float)/100*100
     df['Resolution'] = df['Resolution'].str.rstrip("%").astype(float)/100*100
@@ -73,7 +74,8 @@ def write1():
     st.title("Decile Wise Performance")
     st.markdown("Welcome! Please select from the filters in the sidebar to the left of your screen to narrow down your search within the log analysis tool.")
 
-    df = pd.read_csv(r'C:\Users\ranjitha_scienaptic\Downloads\Decile.csv',index_col=False)
+    #df = pd.read_csv(r'C:\Users\ranjitha_scienaptic\Downloads\Decile.csv',index_col=False)
+    df = pd.read_csv(r'Decile.csv',index_col=False)
     df['FCE%'] = df['FCE%'].str.rstrip("%").astype(float)/100*100
     df['Collection Efficiency'] = df['Collection Efficiency'].str.rstrip("%").astype(float)/100*100
     df['Resolution'] = df['Resolution'].str.rstrip("%").astype(float)/100*100
